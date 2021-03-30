@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>JS Board thingy</title>
+	<link href="../style.css" rel="stylesheet" type="text/css" />
+	<script src="/script.js">
+	</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <% var rootPath = '../'; %>
+  <%- include(rootPath + "./components/nav.ejs") %>
+	<div class="flow-root min-h-screen bg-gradient-to-br from-green-400 to-indigo-600">
+		<div class="bg-coolGray-800 shadow-md px-0 sd:px-8 pb-8 mb-4 flex flex-col my-2 mx-10 md:mx-56 lg:mx-96 md:mt-10 rounded">
+			<h2 class="text-center text-2xl sm:text-4xl font-sans text-gray-200 my-4">JSBoard Setup</h2>
+
+			<div class="main mx-20 md:mx-0 md:items-center">
+				<center>
+					<form class="pt-5">
+						<input
+     
+        type="text"
+        id="sitename"
+        name="sitename"
+        placeholder="Site name"
+        required
+      /><br />
+      <input
+         
+        type="text"
+        id="secret"
+        name="secret"
+        placeholder="Cookies secret (optional)"
+      /><br />
+      <select class="dbengine" id="dbengine" name="dbengine" onchange="pickoption()" required>
+        <option value="mongodb">MongoDB</option>
+        <option value="sql">SQL</option>
+        <option value="mysql">MySQL</option></select
+      ><br />
+  <script>
+    document.getElementById("dbengine").selectedIndex = -1;
+  </script>
+    <div id="mysql">
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="MySQL Email"
+        required
+       
+      /><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="MySQL Password"
+        required
+       
+      /><br />
+      <input
+        type="text"
+        id="url"
+        name="url"
+        placeholder="MySQL URL"
+        required
+       
+      /><br />
+      <input
+        type="text"
+        id="db"
+        name="db"
+        placeholder="MySQL DB"
+        required
+       
+      /><br />
+    </div>
+  <div id="mongodb">
+    <input
+      type="text"
+      id="url"
+      name="url"
+      placeholder="MongoDB URL"
+      required
+       
+    /><br />
+  </div>
+  <div id="adminlogin">
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="User Email"
+      required
+       
+    /><br />
+    <input
+      type="password"
+      id="password"
+      name="password"
+      placeholder="User Password"
+      required
+       
+    /><br />
+    <input
+      type="text"
+      id="username"
+      name="username"
+      placeholder="User Name"
+      required
+       
+    /><br />
+  </div>
+    
+  </div>
+  </center>
+    <input type="reset" onclick="reset()" class="focus:outline-none text-sm py-2.5 px-0 rounded-md bg-coolGray-800  w-20 h-10 cursor-pointer font-sans alignfix no-underline hover:underline text-blue-500">
+    
+    
+      <div class="m-10">
+        <center>
+          <input type="submit" value="Next" class="focus:outline-none text-white text-lg py-2.5 px-5 rounded-md bg-blue-500 hover:bg-blue-600 hover:shadow-lg w-1/2 md:w-4/12 h-16 mb-4 cursor-pointer font-sans">
+          <!--<input type="reset" value="clear" class="focus:outline-none text-white text-sm py-2.5 px-5 rounded-md bg-gray-500 hover:bg-gray-600 hover:shadow-lg w-32 h-10 cursor-pointer font-sans mx-20">-->
+         </center>
+        </div>
+      </form>
+      
+	  
+    </div>
+  </div>
+  </div>
+  <%- include(rootPath + "./components/footer.ejs") %>
+</body>
+</html>
+<script>
+  document.getElementById("mysql").style.display = "none";
+  document.getElementById("mongodb").style.display = "none";
+  function reset(){
+    setTimeout(function(){
+      document.getElementById("mysql").style.display = "none";
+  document.getElementById("mongodb").style.display = "none";
+    }, 10)
+  }
+</script>
