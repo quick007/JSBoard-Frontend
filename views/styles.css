@@ -24,9 +24,7 @@ input[type=text], input[type=password], input[type=email], input[type=url], inpu
     padding: 12px 30px;
   }
 
-  .alignfix {
-    margin-left:11%
-  }
+  
 }
 
 @media all and (min-width: 769px) {
@@ -35,9 +33,7 @@ input[type=text], input[type=password], input[type=email], input[type=url], inpu
     padding: 12px 20px;
   }
 
-  .alignfix {
-    margin-left:8%
-  }
+  
 }
 
 @media all and (min-width: 1024px) {
