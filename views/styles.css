@@ -8,7 +8,9 @@
   background: #2C2F33;
 }
 
+
 input[type=text], input[type=password], input[type=email], input[type=url], input[type=dbengine], .dbengine, select {
+  
   margin: 8px 0;
   display: inline-block;
   border: none;
@@ -18,13 +20,17 @@ input[type=text], input[type=password], input[type=email], input[type=url], inpu
   color: #E5E5E5;
 }
 
+
+
+
 @media all and (max-width: 768px) {
   input[type=text], input[type=password], input[type=email], input[type=url], .dbengine, select {
     width: 100%;
     padding: 12px 30px;
   }
-
-  
+  .alignfix {
+    margin-left:11%
+  }
 }
 
 @media all and (min-width: 769px) {
@@ -32,8 +38,9 @@ input[type=text], input[type=password], input[type=email], input[type=url], inpu
     width: 60%;
     padding: 12px 20px;
   }
-
-  
+  .alignfix {
+    margin-left:8%
+  }
 }
 
 @media all and (min-width: 1024px) {
