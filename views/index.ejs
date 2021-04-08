@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Template Page</title> <!--Make sure to add correct title-->
 	<link href="/styles.css" rel="stylesheet" type="text/css" />
-	<script src="/script.js"></script>
+	<script src="../script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
@@ -15,8 +15,8 @@
   <div class="flex flex-col h-screen">
     <%- include("./components/nav.ejs") %>
     <div class="bg-coolGray-700 flex-grow">
-      <div class="bg-gradient-to-br from-green-400 to-indigo-600 py-14 lg:py-20 min-w-screen">
-        <h1>Name</h1>
+      <div class="bg-black py-14 lg:py-20 min-w-screen">
+        <h1 style="color:<%- themecolor.whatever%>;">Name</h1>
       </div>
       <div class="container max-w-screen-xl px-6 mx-auto text-gray-200 md:px-8 lg:px-10">
         <a href="./jsboard/setup" class="text-4xl">setup page</a>
@@ -29,9 +29,3 @@
 </body> 
 
 </html>
-<script>
-  $(document).ready(function() {
-    const textColour = (brightness > 125) ? 'black' : 'white';
-      $('#textcolor').css('color', textColour);
-  )}; 
-</script>
