@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>JS Board thingy</title>
+	<link href="/styles.css" rel="stylesheet" type="text/css" />
+	<script src="/script.js">
+	</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <% var rootPath = '../'; %>
+  <%- include(rootPath + "./components/nav.ejs") %>
+	<div class="flow-root min-h-screen bg-gradient-to-br from-green-400 to-indigo-600">
+		<div class="bg-coolGray-700 shadow-md px-0 sd:px-8 pb-8 mb-2 flex flex-col my-2 mx-10 md:mx-56 lg:mx-96 md:my-10 rounded">
+			<h2 class="text-center text-2xl sm:text-4xl font-sans text-gray-200 my-4">Create a New Forum Section</h2>
+
+			<div class="main mx-20 md:mx-0 md:items-center">
+				<center>
+					<form class="pt-5">
+            <select required>
+              <option value="mongodb">Choose a forum type...</option>
+              <option value="sql">Announcement channel (made for long offical announcements/serverside notifications</option>
+              <option value="mysql">General (general talking, best for discussions or suggestions)</option>
+              <option value="mongodb">Questions (More or less budget stack overflow) </option>
+              <option value="mongodb">Link (self explanetory. would remove some options below)</option>
+              
+            </select>
+						<input
+     
+        type="text"
+        id="sitename"
+        name="sitename"
+        placeholder="Forum Name"
+        required
+      />
+      <input
+     
+        type="text"
+        id="sitename"
+        name="sitename"
+        placeholder="Forum SVG (autofills)"
+        required
+      />
+      <select required>
+              <option value="mongodb">Choose a color...</option>
+              <option>gray</option>
+              <option>red</option>
+              <option>yellow</option>
+              <option>etc.</option>
+            </select>
+      
+      
+    
+  </div>
+      <center>
+      <input type="submit" value="Next" class="focus:outline-none text-white text-lg py-2.5 px-5 rounded-md bg-blue-500 hover:bg-blue-600 hover:shadow-lg w-1/2 md:w-4/12 h-16 mb-4 cursor-pointer font-sans m-10 shadow">
+      <!--<input type="reset" value="clear" class="focus:outline-none text-white text-sm py-2.5 px-5 rounded-md bg-gray-500 hover:bg-gray-600 hover:shadow-lg w-32 h-10 cursor-pointer font-sans mx-20">-->
+          
+    </center>  
+  </form>
+  
+  </div>
+  </div>
+  </div>
+  <%- include(rootPath + "./components/footer.ejs") %>
+</body>
+</html>
+

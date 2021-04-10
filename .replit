@@ -1,2 +1,2 @@
 language = "nodejs"
-run = "npm run tailwind:css && node index.js"
+run = "npm run tailwind && node index.js"
