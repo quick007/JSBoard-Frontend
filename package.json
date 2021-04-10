@@ -15,7 +15,7 @@
     "tailwindcss": "^2.1.1"
   },
   "scripts": {
-    "tailwind": "postcss views/tailwind.css -o views/styles.css"
+    "tailwind": "npx tailwindcss-cli@latest build ./views/custom.css -o ./views/assets/styles.css"
   },
   "keywords": [],
   "author": "",

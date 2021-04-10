@@ -8,7 +8,6 @@ module.exports = {
       'oswald': ['Oswald'],
     },
     color: {
-      gray: colors.gray,
     },
   },
   variants: {
