@@ -1,4 +1,5 @@
 @import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto&display=swap');
 
 .bg-coolGray-800 {
   background: #1f2124;
@@ -48,4 +49,12 @@ input[type=text], input[type=password], input[type=email], input[type=url], inpu
     width: 80%;
     padding: 12px 20px;
   }
+}
+
+.font-oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
 }
