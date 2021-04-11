@@ -1,4 +1,4 @@
-
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <% try { %>
@@ -9,14 +9,17 @@
   <link rel="stylesheet" href="/assets/styles.css">
   <script src="/assets/script.js"></script>
   <script src="/assets/jquery.js"></script>
-
+</head>
 <body>
-  <div class="flex flex-col h-screen">
-    <%- include("./nav.ejs") %>
+  <div class="flex flex-grow h-screen w-screen">
+    <div class="flex flex-row flex-grow">
+    <div class="flex pr-[20px]">
+      
+    </div>
+    <div class="flex flex-col flex-grow h-screen">
+    <%- include("../ejs/nav.ejs") %>
     <% try{ %>
       <div class="bg-<%- bgcolor %>-700 flex-grow">
       <% } catch { %>coolGray-700 flex-grow">
       <% } %>
-        <div class="container max-w-screen-xl px-6 mx-auto text-gray-200 md:px-8 lg:px-10">
-      
-        
+        <div class="container max-w-screen-xl px-6 mx-auto text-gray-200 md:px-8 lg:px-10">test

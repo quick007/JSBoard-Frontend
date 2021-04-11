@@ -20,9 +20,6 @@ input[type=text], input[type=password], input[type=email], input[type=url], inpu
   color: #E5E5E5;
 }
 
-
-
-
 @media all and (max-width: 768px) {
   input[type=text], input[type=password], input[type=email], input[type=url], .dbengine, select {
     width: 100%;

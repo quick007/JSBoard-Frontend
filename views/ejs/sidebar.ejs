@@ -1,0 +1,9 @@
+<%- include("./core.ejs", { title:title, bgcolor:bgcolor}) %>
+<% try{ %>
+<div class="h-full w-[200px] bg-<%- bgcolor %>-800">
+<% } catch { %>coolGray-700">
+<% } %>
+  <%for(let elm in sidebarElements){%>
+    <a><%=sidebarElements[elm]%></a><br>
+  <% } %>
+</div>
